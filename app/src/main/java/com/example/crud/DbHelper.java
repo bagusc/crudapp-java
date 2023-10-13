@@ -1,6 +1,7 @@
 package com.example.crud;
 
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -48,6 +49,7 @@ public class DbHelper extends SQLiteOpenHelper {
         return insert;
     }
 
+    @SuppressLint("Range")
     public ArrayList<Student> getAllUsers() {
         ArrayList<Student> userModelArrayList = new ArrayList<Student>();
 
